@@ -1,0 +1,559 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Nepali English Date Converter</title>
+
+</head>
+<body align="center" style = "margin-left:auto; margin-right:auto;">
+    <h2>Nepali To English Date Converter</h2>
+    <h3>{{ day }}</h3>
+    <h3 style="color:red;">{{ error }}</h3>
+    <div id="nepali date"  >
+      <p align="center">
+
+
+      <form action="" method="post"  {%if conversion == "To Nepali"%} style = " display: inline-block; border-style:solid;"{% endif  %} >
+        <select name="txtMonth" size="1">
+
+          <option value="1"{%if txtMonth == 1 %} selected {% endif%}>Baisakh</option>
+
+          <option value="2"{%if txtMonth == 2 %} selected {% endif%}  >Jestha</option>
+
+          <option value="3"{%if txtMonth == 3 %} selected {% endif%}  >Asadh</option>
+
+          <option value="4"{%if txtMonth == 4 %} selected {% endif%}  >Shrawan</option>
+
+          <option value="5"{%if txtMonth == 5 %} selected {% endif%}  >Bhadra</option>
+
+          <option value="6"{%if txtMonth == 6 %} selected {% endif%}  >Ashwin</option>
+
+          <option value="7"{%if txtMonth == 7 %} selected {% endif%}  >Kartik</option>
+
+          <option value="8"{%if txtMonth == 8 %} selected {% endif%}  >Mangshir</option>
+
+          <option value="9"{%if txtMonth == 9 %} selected {% endif%}  >Poush</option>
+
+          <option value="10"{%if txtMonth == 10 %} selected {% endif%}  >Magh</option>
+
+          <option value="11"{%if txtMonth == 11 %} selected {% endif%}  >Falgun</option>
+
+          <option value="12"{%if txtMonth == 12 %} selected {% endif%}  >Chaitra</option>
+
+        </select>
+
+
+
+        <select name="txtDay" size="1">
+
+          <option value="1"  {%if txtDay == 1 %} selected {% endif%} >1</option>
+
+          <option value="2"  {%if txtDay == 2 %} selected {% endif%}>2</option>
+
+          <option value="3"  {%if txtDay == 3 %} selected {% endif%}>3</option>
+
+          <option value="4"  {%if txtDay == 4 %} selected {% endif%}>4</option>
+
+          <option value="5"  {%if txtDay == 5 %} selected {% endif%}>5</option>
+
+          <option value="6"  {%if txtDay == 6 %} selected {% endif%}>6</option>
+
+          <option value="7"  {%if txtDay == 7 %} selected {% endif%}>7</option>
+
+          <option value="8"  {%if txtDay == 8 %} selected {% endif%}>8</option>
+
+          <option value="9"  {%if txtDay == 9 %} selected {% endif%}>9</option>
+
+          <option value="10"  {%if txtDay == 10 %} selected {% endif%}>10</option>
+
+          <option value="11"  {%if txtDay == 11 %} selected {% endif%}>11</option>
+
+          <option value="12"  {%if txtDay == 12 %} selected {% endif%}>12</option>
+
+          <option value="13"  {%if txtDay == 13 %} selected {% endif%}>13</option>
+
+          <option value="14"  {%if txtDay == 14 %} selected {% endif%}>14</option>
+
+          <option value="15"  {%if txtDay == 15 %} selected {% endif%}>15</option>
+
+          <option value="16"  {%if txtDay == 16 %} selected {% endif%}>16</option>
+
+          <option value="17"  {%if txtDay == 17 %} selected {% endif%}>17</option>
+
+          <option value="18"  {%if txtDay == 18 %} selected {% endif%}>18</option>
+
+          <option value="19"  {%if txtDay == 19 %} selected {% endif%}>19</option>
+
+          <option value="20"  {%if txtDay == 20 %} selected {% endif%}>20</option>
+
+          <option value="21"  {%if txtDay == 21 %} selected {% endif%}>21</option>
+
+          <option value="22"  {%if txtDay == 22 %} selected {% endif%}>22</option>
+
+          <option value="23"  {%if txtDay == 23 %} selected {% endif%}>23</option>
+
+          <option value="24"  {%if txtDay == 24 %} selected {% endif%}>24</option>
+
+          <option value="25"  {%if txtDay == 25 %} selected {% endif%}>25</option>
+
+          <option value="26"  {%if txtDay == 26 %} selected {% endif%}>26</option>
+
+          <option value="27"  {%if txtDay == 27 %} selected {% endif%}>27</option>
+
+          <option value="28"  {%if txtDay == 28 %} selected {% endif%}>28</option>
+
+          <option value="29"  {%if txtDay == 29 %} selected {% endif%}>29</option>
+
+          <option value="30"  {%if txtDay == 30 %} selected {% endif%}>30</option>
+
+          <option value="31"  {%if txtDay == 31 %} selected {% endif%}>31</option>
+
+          <option value="32"  {%if txtDay == 32 %} selected {% endif%}>32</option>
+
+        </select>
+
+
+
+        <select name="txtYear" size="1">
+
+          <option value="2089" {%if txtYear == 2089 %} selected {% endif%}>2089</option>
+          <option value="2088" {%if txtYear == 2088 %} selected {% endif%}>2088</option>
+          <option value="2087" {%if txtYear == 2087 %} selected {% endif%}>2087</option>
+          <option value="2086" {%if txtYear == 2086 %} selected {% endif%}>2086</option>
+          <option value="2085" {%if txtYear == 2085 %} selected {% endif%}>2085</option>
+          <option value="2084" {%if txtYear == 2084 %} selected {% endif%}>2084</option>
+          <option value="2083" {%if txtYear == 2083 %} selected {% endif%}>2083</option>
+          <option value="2082" {%if txtYear == 2082 %} selected {% endif%}>2082</option>
+          <option value="2081" {%if txtYear == 2081 %} selected {% endif%}>2081</option>
+          <option value="2080" {%if txtYear == 2080 %} selected {% endif%}>2080</option>
+          <option value="2079" {%if txtYear == 2079 %} selected {% endif%}>2079</option>
+          <option value="2078" {%if txtYear == 2078 %} selected {% endif%}>2078</option>
+          <option value="2077" {%if txtYear == 2077 %} selected {% endif%}>2077</option>
+          <option value="2076" {%if txtYear == 2076 %} selected {% endif%}>2076</option>
+          <option value="2075" {%if txtYear == 2075 %} selected {% endif%}>2075</option>
+          <option value="2074" {%if txtYear == 2074 %} selected {% endif%}>2074</option>
+          <option value="2073" {%if txtYear == 2073 %} selected {% endif%}>2073</option>
+          <option value="2072" {%if txtYear == 2072 %} selected {% endif%}>2072</option>
+          <option value="2071" {%if txtYear == 2071 %} selected {% endif%}>2071</option>
+          <option value="2070" {%if txtYear == 2070 %} selected {% endif%}>2070</option>
+
+          <option value="2069" {%if txtYear == 2069 %} selected {% endif%}>2069</option>
+
+          <option value="2068" {%if txtYear == 2068 %} selected {% endif%}>2068</option>
+
+          <option value="2067" {%if txtYear == 2067 %} selected {% endif%}>2067</option>
+
+          <option value="2066" {%if txtYear == 2066 %} selected {% endif%}>2066</option>
+
+          <option value="2065" {%if txtYear == 2065 %} selected {% endif%}>2065</option>
+
+          <option value="2064" {%if txtYear == 2064 %} selected {% endif%}>2064</option>
+
+          <option value="2063" {%if txtYear == 2063 %} selected {% endif%}>2063</option>
+
+          <option value="2062" {%if txtYear == 2062 %} selected {% endif%}>2062</option>
+
+          <option value="2061" {%if txtYear == 2061 %} selected {% endif%}>2061</option>
+
+          <option value="2060" {%if txtYear == 2060 %} selected {% endif%}>2060</option>
+
+          <option value="2059" {%if txtYear == 2059 %} selected {% endif%}>2059</option>
+
+          <option value="2058" {%if txtYear == 2058 %} selected {% endif%}>2058</option>
+
+          <option value="2057" {%if txtYear == 2057 %} selected {% endif%}>2057</option>
+
+          <option value="2056" {%if txtYear == 2056 %} selected {% endif%}>2056</option>
+
+          <option value="2055" {%if txtYear == 2055 %} selected {% endif%}>2055</option>
+
+          <option value="2054" {%if txtYear == 2054 %} selected {% endif%}>2054</option>
+
+          <option value="2053" {%if txtYear == 2053 %} selected {% endif%}>2053</option>
+
+          <option value="2052" {%if txtYear == 2052 %} selected {% endif%}>2052</option>
+
+          <option value="2051" {%if txtYear == 2051 %} selected {% endif%}>2051</option>
+
+          <option value="2050" {%if txtYear == 2050 %} selected {% endif%}>2050</option>
+
+          <option value="2049" {%if txtYear == 2049 %} selected {% endif%}>2049</option>
+
+          <option value="2048" {%if txtYear == 2048 %} selected {% endif%}>2048</option>
+
+          <option value="2047" {%if txtYear == 2047 %} selected {% endif%}>2047</option>
+
+          <option value="2046" {%if txtYear == 2046 %} selected {% endif%}>2046</option>
+
+          <option value="2045" {%if txtYear == 2045 %} selected {% endif%}>2045</option>
+
+          <option value="2044" {%if txtYear == 2044 %} selected {% endif%}>2044</option>
+
+          <option value="2043" {%if txtYear == 2043 %} selected {% endif%}>2043</option>
+
+          <option value="2042" {%if txtYear == 2042 %} selected {% endif%}>2042</option>
+
+          <option value="2041" {%if txtYear == 2041 %} selected {% endif%}>2041</option>
+
+          <option value="2040" {%if txtYear == 2040 %} selected {% endif%}>2040</option>
+
+          <option value="2039" {%if txtYear == 2039 %} selected {% endif%}>2039</option>
+
+          <option value="2038" {%if txtYear == 2038 %} selected {% endif%}>2038</option>
+
+          <option value="2037" {%if txtYear == 2037 %} selected {% endif%}>2037</option>
+
+          <option value="2036" {%if txtYear == 2036 %} selected {% endif%}>2036</option>
+
+          <option value="2035" {%if txtYear == 2035 %} selected {% endif%}>2035</option>
+
+          <option value="2034" {%if txtYear == 2034 %} selected {% endif%}>2034</option>
+
+          <option value="2033" {%if txtYear == 2033 %} selected {% endif%}>2033</option>
+
+          <option value="2032" {%if txtYear == 2032 %} selected {% endif%}>2032</option>
+
+          <option value="2031" {%if txtYear == 2031 %} selected {% endif%}>2031</option>
+
+          <option value="2030" {%if txtYear == 2030 %} selected {% endif%}>2030</option>
+
+          <option value="2029" {%if txtYear == 2029 %} selected {% endif%}>2029</option>
+
+          <option value="2028" {%if txtYear == 2028 %} selected {% endif%}>2028</option>
+
+          <option value="2027" {%if txtYear == 2027 %} selected {% endif%}>2027</option>
+
+          <option value="2026" {%if txtYear == 2026 %} selected {% endif%}>2026</option>
+
+          <option value="2025" {%if txtYear == 2025 %} selected {% endif%}>2025</option>
+
+          <option value="2024" {%if txtYear == 2024 %} selected {% endif%}>2024</option>
+
+          <option value="2023" {%if txtYear == 2023 %} selected {% endif%}>2023</option>
+
+          <option value="2022" {%if txtYear == 2022 %} selected {% endif%}>2022</option>
+
+          <option value="2021" {%if txtYear == 2021 %} selected {% endif%}>2021</option>
+
+          <option value="2020" {%if txtYear == 2020 %} selected {% endif%}>2020</option>
+
+          <option value="2019" {%if txtYear == 2019 %} selected {% endif%}>2019</option>
+
+          <option value="2018" {%if txtYear == 2018 %} selected {% endif%}>2018</option>
+
+          <option value="2017" {%if txtYear == 2017 %} selected {% endif%}>2017</option>
+
+          <option value="2016" {%if txtYear == 2016 %} selected {% endif%}>2016</option>
+
+          <option value="2015" {%if txtYear == 2015 %} selected {% endif%}>2015</option>
+
+          <option value="2014" {%if txtYear == 2014 %} selected {% endif%}>2014</option>
+
+          <option value="2013" {%if txtYear == 2013 %} selected {% endif%}>2013</option>
+
+          <option value="2012" {%if txtYear == 2012 %} selected {% endif%}>2012</option>
+
+          <option value="2011" {%if txtYear == 2011 %} selected {% endif%}>2011</option>
+
+          <option value="2010" {%if txtYear == 2010 %} selected {% endif%}>2010</option>
+
+          <option value="2009" {%if txtYear == 2009 %} selected {% endif%}>2009</option>
+
+          <option value="2008" {%if txtYear == 2008 %} selected {% endif%}>2008</option>
+
+          <option value="2007" {%if txtYear == 2007 %} selected {% endif%}>2007</option>
+
+          <option value="2006" {%if txtYear == 2006 %} selected {% endif%}>2006</option>
+
+          <option value="2005" {%if txtYear == 2005 %} selected {% endif%}>2005</option>
+
+          <option value="2004" {%if txtYear == 2004 %} selected {% endif%}>2004</option>
+
+          <option value="2003" {%if txtYear == 2003 %} selected {% endif%}>2003</option>
+
+          <option value="2002" {%if txtYear == 2002 %} selected {% endif%}>2002</option>
+
+          <option value="2001" {%if txtYear == 2001 %} selected {% endif%}>2001</option>
+
+          <option value="2000" {%if txtYear == 2000 %} selected {% endif%}>2000</option>
+
+
+          <input type="submit" name="to" id="toenglish" value="To English" />
+          </form>      
+        </div>
+        <div id="english">
+          <form action="" method="post" {%if conversion == "To English"%} style = "display: inline-block;border-style:solid; "{% endif  %}>
+
+            <select name="txtMonth" size="1">
+
+              <option value="1" {%if adtxtMonth == 1 %} selected {% endif%}>January</option>
+
+              <option value="2" {%if adtxtMonth == 2 %} selected {% endif%}>February</option>
+
+              <option value="3" {%if adtxtMonth == 3 %} selected {% endif%}>March</option>
+
+              <option value="4" {%if adtxtMonth == 4 %} selected {% endif%}>April</option>
+
+              <option value="5" {%if adtxtMonth == 5 %} selected {% endif%}>May</option>
+
+              <option value="6" {%if adtxtMonth == 6 %} selected {% endif%}>June</option>
+
+              <option value="7" {%if adtxtMonth == 7 %} selected {% endif%}>July</option>
+
+              <option value="8" {%if adtxtMonth == 8 %} selected {% endif%}>August</option>
+
+              <option value="9" {%if adtxtMonth == 9 %} selected {% endif%}>September</option>
+
+              <option value="10" {%if adtxtMonth == 10 %} selected {% endif%}>October</option>
+
+              <option value="11" {%if adtxtMonth == 11 %} selected {% endif%}>November</option>
+
+              <option value="12" {%if adtxtMonth == 12 %} selected {% endif%}>December</option>
+
+            </select>
+
+
+
+            <select name="txtDay" size="1">
+
+              <option value="1" {%if adtxtDay == 1 %} selected {% endif%}>1</option>
+
+              <option value="2" {%if adtxtDay == 2 %} selected {% endif%}>2</option>
+
+              <option value="3" {%if adtxtDay == 3 %} selected {% endif%}>3</option>
+
+              <option value="4" {%if adtxtDay == 4 %} selected {% endif%}>4</option>
+
+              <option value="5" {%if adtxtDay == 5 %} selected {% endif%}>5</option>
+
+              <option value="6" {%if adtxtDay == 6 %} selected {% endif%}>6</option>
+
+              <option value="7" {%if adtxtDay == 7 %} selected {% endif%}>7</option>
+
+              <option value="8" {%if adtxtDay == 8 %} selected {% endif%}>8</option>
+
+              <option value="9" {%if adtxtDay == 9 %} selected {% endif%}>9</option>
+
+              <option value="10" {%if adtxtDay == 10 %} selected {% endif%} >10</option>
+
+              <option value="11" {%if adtxtDay == 11 %} selected {% endif%}>11</option>
+
+              <option value="12" {%if adtxtDay == 12 %} selected {% endif%}>12</option>
+
+              <option value="13" {%if adtxtDay == 13 %} selected {% endif%}>13</option>
+
+              <option value="14" {%if adtxtDay == 14 %} selected {% endif%}>14</option>
+
+              <option value="15" {%if adtxtDay == 15 %} selected {% endif%}>15</option>
+
+              <option value="16" {%if adtxtDay == 16 %} selected {% endif%}>16</option>
+
+              <option value="17" {%if adtxtDay == 17 %} selected {% endif%}>17</option>
+
+              <option value="18" {%if adtxtDay == 18 %} selected {% endif%}>18</option>
+
+              <option value="19" {%if adtxtDay == 19 %} selected {% endif%}>19</option>
+
+              <option value="20" {%if adtxtDay == 20 %} selected {% endif%}>20</option>
+
+              <option value="21" {%if adtxtDay == 21 %} selected {% endif%}>21</option>
+
+              <option value="22" {%if adtxtDay == 22 %} selected {% endif%}>22</option>
+
+              <option value="23" {%if adtxtDay == 23 %} selected {% endif%}>23</option>
+
+              <option value="24" {%if adtxtDay == 24 %} selected {% endif%}>24</option>
+
+              <option value="25" {%if adtxtDay == 25 %} selected {% endif%}>25</option>
+
+              <option value="26" {%if adtxtDay == 26 %} selected {% endif%}>26</option>
+
+              <option value="27" {%if adtxtDay == 27 %} selected {% endif%}>27</option>
+
+              <option value="28" {%if adtxtDay == 28 %} selected {% endif%}>28</option>
+
+              <option value="29" {%if adtxtDay == 29 %} selected {% endif%}>29</option>
+
+              <option value="30" {%if adtxtDay == 30 %} selected {% endif%}>30</option>
+
+              <option value="31" {%if adtxtDay == 31 %} selected {% endif%}>31</option>
+
+            </select>
+
+
+
+            <select name="txtYear" size="1">
+
+              <option value="2033" {%if adtxtYear == 2033 %} selected {% endif%}>2033</option>
+              <option value="2032" {%if adtxtYear == 2032 %} selected {% endif%}>2032</option>
+              <option value="2031" {%if adtxtYear == 2031 %} selected {% endif%}>2031</option>
+              <option value="2030" {%if adtxtYear == 2030 %} selected {% endif%}>2030</option>
+              <option value="2029" {%if adtxtYear == 2029 %} selected {% endif%}>2029</option>
+              <option value="2028" {%if adtxtYear == 2028 %} selected {% endif%}>2028</option>
+              <option value="2027" {%if adtxtYear == 2027 %} selected {% endif%}>2027</option>
+              <option value="2026" {%if adtxtYear == 2026 %} selected {% endif%}>2026</option>
+              <option value="2025" {%if adtxtYear == 2025 %} selected {% endif%}>2025</option>
+              <option value="2024" {%if adtxtYear == 2024 %} selected {% endif%}>2024</option>
+              <option value="2023" {%if adtxtYear == 2023 %} selected {% endif%}>2023</option>
+              <option value="2022" {%if adtxtYear == 2022 %} selected {% endif%}>2022</option>
+              <option value="2021" {%if adtxtYear == 2021 %} selected {% endif%}>2021</option>
+              <option value="2020" {%if adtxtYear == 2020 %} selected {% endif%}>2020</option>
+              <option value="2019" {%if adtxtYear == 2019 %} selected {% endif%}>2019</option>
+              <option value="2018" {%if adtxtYear == 2018 %} selected {% endif%}>2018</option>
+              <option value="2017" {%if adtxtYear == 2017 %} selected {% endif%}>2017</option>
+              <option value="2016" {%if adtxtYear == 2016 %} selected {% endif%}>2016</option>
+              <option value="2015" {%if adtxtYear == 2015 %} selected {% endif%}>2015</option>
+              <option value="2014" {%if adtxtYear == 2014 %} selected {% endif%}>2014</option>
+              <option value="2013" {%if adtxtYear == 2013 %} selected {% endif%}>2013</option>
+
+              <option value="2012" {%if adtxtYear == 2012 %} selected {% endif%}>2012</option>
+
+              <option value="2011" {%if adtxtYear == 2011 %} selected {% endif%}>2011</option>
+
+              <option value="2010" {%if adtxtYear == 2010 %} selected {% endif%}>2010</option>
+
+              <option value="2009" {%if adtxtYear == 2009 %} selected {% endif%}>2009</option>
+
+              <option value="2008" {%if adtxtYear == 2008 %} selected {% endif%}>2008</option>
+
+              <option value="2007" {%if adtxtYear == 2007 %} selected {% endif%}>2007</option>
+
+              <option value="2006" {%if adtxtYear == 2006 %} selected {% endif%}>2006</option>
+
+              <option value="2005" {%if adtxtYear == 2005 %} selected {% endif%}>2005</option>
+
+              <option value="2004" {%if adtxtYear == 2004 %} selected {% endif%}>2004</option>
+
+              <option value="2003" {%if adtxtYear == 2003 %} selected {% endif%}>2003</option>
+
+              <option value="2002" {%if adtxtYear == 2002 %} selected {% endif%}>2002</option>
+
+              <option value="2001" {%if adtxtYear == 2001 %} selected {% endif%}>2001</option>
+
+              <option value="2000" {%if adtxtYear == 2000 %} selected {% endif%}>2000</option>
+
+              <option value="1999" {%if adtxtYear == 1999 %} selected {% endif%}>1999</option>
+
+              <option value="1998" {%if adtxtYear == 1998 %} selected {% endif%}>1998</option>
+
+              <option value="1997" {%if adtxtYear == 1997 %} selected {% endif%}>1997</option>
+
+              <option value="1996" {%if adtxtYear == 1996 %} selected {% endif%}>1996</option>
+
+              <option value="1995" {%if adtxtYear == 1995 %} selected {% endif%}>1995</option>
+
+              <option value="1994" {%if adtxtYear == 1994 %} selected {% endif%}>1994</option>
+
+              <option value="1993" {%if adtxtYear == 1993 %} selected {% endif%}>1993</option>
+
+              <option value="1992" {%if adtxtYear == 1992 %} selected {% endif%}>1992</option>
+
+              <option value="1991" {%if adtxtYear == 1991 %} selected {% endif%}>1991</option>
+
+              <option value="1990" {%if adtxtYear == 1990 %} selected {% endif%}>1990</option>
+
+              <option value="1989" {%if adtxtYear == 1989 %} selected {% endif%}>1989</option>
+
+              <option value="1988" {%if adtxtYear == 1988 %} selected {% endif%}>1988</option>
+
+              <option value="1987" {%if adtxtYear == 1987 %} selected {% endif%}>1987</option>
+
+              <option value="1986" {%if adtxtYear == 1986 %} selected {% endif%}>1986</option>
+
+              <option value="1985" {%if adtxtYear == 1985 %} selected {% endif%}>1985</option>
+
+              <option value="1984" {%if adtxtYear == 1984 %} selected {% endif%}>1984</option>
+
+              <option value="1983" {%if adtxtYear == 1983 %} selected {% endif%}>1983</option>
+
+              <option value="1982" {%if adtxtYear == 1982 %} selected {% endif%}>1982</option>
+
+              <option value="1981" {%if adtxtYear == 1981 %} selected {% endif%}>1981</option>
+
+              <option value="1980" {%if adtxtYear == 1980 %} selected {% endif%}>1980</option>
+
+              <option value="1979" {%if adtxtYear == 1979 %} selected {% endif%}>1979</option>
+
+              <option value="1978" {%if adtxtYear == 1978 %} selected {% endif%}>1978</option>
+
+              <option value="1977" {%if adtxtYear == 1977 %} selected {% endif%}>1977</option>
+
+              <option value="1976" {%if adtxtYear == 1976 %} selected {% endif%}>1976</option>
+
+              <option value="1975" {%if adtxtYear == 1975 %} selected {% endif%}>1975</option>
+
+              <option value="1974" {%if adtxtYear == 1974 %} selected {% endif%}>1974</option>
+
+              <option value="1973" {%if adtxtYear == 1973 %} selected {% endif%}>1973</option>
+
+              <option value="1972" {%if adtxtYear == 1972 %} selected {% endif%}>1972</option>
+
+              <option value="1971" {%if adtxtYear == 1971 %} selected {% endif%}>1971</option>
+
+              <option value="1970" {%if adtxtYear == 1970 %} selected {% endif%}>1970</option>
+
+              <option value="1969" {%if adtxtYear == 1969 %} selected {% endif%}>1969</option>
+
+              <option value="1968" {%if adtxtYear == 1968 %} selected {% endif%}>1968</option>
+
+              <option value="1967" {%if adtxtYear == 1967 %} selected {% endif%}>1967</option>
+
+              <option value="1966" {%if adtxtYear == 1966 %} selected {% endif%}>1966</option>
+
+              <option value="1965" {%if adtxtYear == 1965 %} selected {% endif%}>1965</option>
+
+              <option value="1964" {%if adtxtYear == 1964 %} selected {% endif%}>1964</option>
+
+              <option value="1963" {%if adtxtYear == 1963 %} selected {% endif%}>1963</option>
+
+              <option value="1962" {%if adtxtYear == 1962 %} selected {% endif%}>1962</option>
+
+              <option value="1961" {%if adtxtYear == 1961 %} selected {% endif%}>1961</option>
+
+              <option value="1960" {%if adtxtYear == 1960 %} selected {% endif%}>1960</option>
+
+              <option value="1959" {%if adtxtYear == 1959 %} selected {% endif%}>1959</option>
+
+              <option value="1958" {%if adtxtYear == 1958 %} selected {% endif%}>1958</option>
+
+              <option value="1957" {%if adtxtYear == 1957 %} selected {% endif%}>1957</option>
+
+              <option value="1956" {%if adtxtYear == 1956 %} selected {% endif%}>1956</option>
+
+              <option value="1955" {%if adtxtYear == 1955 %} selected {% endif%}>1955</option>
+
+              <option value="1954" {%if adtxtYear == 1954 %} selected {% endif%}>1954</option>
+
+              <option value="1953" {%if adtxtYear == 1953 %} selected {% endif%}>1953</option>
+
+              <option value="1952" {%if adtxtYear == 1952 %} selected {% endif%}>1952</option>
+
+              <option value="1951" {%if adtxtYear == 1951 %} selected {% endif%}>1951</option>
+
+              <option value="1950" {%if adtxtYear == 1950 %} selected {% endif%}>1950</option>
+
+              <option value="1949" {%if adtxtYear == 1949 %} selected {% endif%}>1949</option>
+
+              <option value="1948" {%if adtxtYear == 1948 %} selected {% endif%}>1948</option>
+
+              <option value="1947" {%if adtxtYear == 1947 %} selected {% endif%}>1947</option>
+
+              <option value="1946" {%if adtxtYear == 1946 %} selected {% endif%}>1946</option>
+
+              <option value="1945" {%if adtxtYear == 1945 %} selected {% endif%}>1945</option>
+
+              <option value="1944" {%if adtxtYear == 1944 %} selected {% endif%}>1944</option>
+
+
+
+          <input type="submit" name="to" id="toenglish" value="To Nepali" />
+          </form> 
+        </div>
+        <div id="rush">
+          <p>In a rush?</p>
+          <p>Get the date directly with /tonepali/yyyy-mm-dd <br> eg. <a href = "/tonepali/1989-11-8">/tonepali/1989-11-8</a><br> or <a href = "/toenglish/2046-11-8">/toenglish/2046-11-8</a></p>
+          
+        </div>
+
+  </body>
+</html>
