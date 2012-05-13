@@ -26,7 +26,7 @@ def datetoday():
   now = datetime.datetime.now()
   return  (int(now.year),int(now.month), int(now.day))
 def day(date):
-   days = ("Monday","Tuesday","Wednesday","Thrusday","Friday","Saturday","Sunday")
+   days = ("Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday")
    try:
      weekday = days[datetime.date(date[0],date[1],date[2]).weekday()]
      return weekday
@@ -59,7 +59,13 @@ class MainHandler(Handler):
             if advalidation(dateinAD):
                 dateinBS = converter.ad2bs(dateinAD)
                 weekday = day(dateinAD)
-                self.render("index.html",txtYear=dateinBS[0],txtMonth=dateinBS[1],txtDay=dateinBS[2],adtxtYear=dateinAD[0],adtxtMonth=dateinAD[1],adtxtDay=dateinAD[2],conversion=conversion,day=weekday,error="")
+                try:
+                    self.render("index.html",txtYear=dateinBS[0],txtMonth=dateinBS[1],txtDay=dateinBS[2],adtxtYear=dateinAD[0],adtxtMonth=dateinAD[1],adtxtDay=dateinAD[2],conversion=conversion,day=weekday,error="")
+                except:
+                    dateinAD = (datetoday())
+                    dateinBS = converter.ad2bs(dateinAD)
+                    daytoday = day(dateinAD)
+                    self.render("index.html",txtYear=dateinBS[0],txtMonth=dateinBS[1],txtDay=dateinBS[2],adtxtYear=dateinAD[0],adtxtMonth=dateinAD[1],adtxtDay=dateinAD[2],conversion="",day="",error="Data unavailable")
             else:
                 dateinAD = (datetoday())
                 dateinBS = converter.ad2bs(dateinAD)
