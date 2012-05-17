@@ -5,6 +5,7 @@ import NepaliDateConverter
 import jinja2
 import os
 import datetime
+import json
 
 template_dir = os.path.join(os.path.dirname(__file__), 'templates')
 jinja_env = jinja2.Environment(loader = jinja2.FileSystemLoader(template_dir), autoescape = True)
@@ -87,6 +88,7 @@ class MainHandler(Handler):
 class APINepaliHandler(Handler):
 
     def get(self,date):
+        self.response.headers['Content-Type'] = "application/json; charset=UTF-8"
         year,month,daay = [int(i) for i in (str(date).split("-"))]
         try:
             converter = NepaliDateConverter.NepaliDateConverter() 
@@ -95,13 +97,17 @@ class APINepaliHandler(Handler):
             if not date:
               self.response.out.write("Out of Range")
             else:
-              self.response.out.write({'weekday':weekday,'year':str(date[0]),'month':str(date[1]),'day':str(date[2])})
+              
+              output = {'weekday':weekday,'year':str(date[0]),'month':str(date[1]),'day':str(date[2])}
+              jsonoutput = json.dumps(output)
+              self.response.out.write(jsonoutput)
         except :  
           self.response.out.write("There was a error, is the url formatted correctly, /tonepali/yyyy-mm-dd <br>eg. /tonepali/1989-1-23")
 
 
 class APIEnglishHandler(Handler):
     def get(self,date):
+        self.response.headers['Content-Type'] = "application/json; charset=UTF-8"
         year,month,daay = [int(i) for i in (str(date).split("-"))] 
         try:
             converter = NepaliDateConverter.NepaliDateConverter() 
@@ -110,7 +116,9 @@ class APIEnglishHandler(Handler):
             if not date:
                self.response.out.write("Out of range")
             else:
-               self.response.out.write({'weekday':weekday,'year':str(date[0]),'month':str(date[1]),'day':str(date[2])})
+              output = {'weekday':weekday,'year':str(date[0]),'month':str(date[1]),'day':str(date[2])}
+              jsonoutput = json.dumps(output)
+              self.response.out.write(jsonoutput)
         except :  
           self.response.out.write("There was a error, is the url formatted correctly, /toenglish/yyyy-mm-dd <br>eg. /toenglish/2046-7-23")
 app = webapp2.WSGIApplication([('/', MainHandler),('/toenglish/(.+)',APIEnglishHandler),('/tonepali/(.+)',APINepaliHandler)],debug=True)
